@@ -1,0 +1,3 @@
+#morning.redis.sources.cluster4.cluster.max-redirects: 3
+#morning.redis.sources.cluster4.lettuce.cluster.refresh.adaptive: true
+#morning.redis.sources.cluster4.lettuce.cluster.refresh.period: 10s

@@ -3,28 +3,24 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.github.jackeymm</groupId>
+    <artifactId>morning</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
 
-  <groupId>com.github.jackeymm</groupId>
-  <artifactId>morning</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <artifactId>morning-spring</artifactId>
   <packaging>pom</packaging>
-
-  <name>morning</name>
-  <description>Scaffolding of microservice development</description>
-  <url>https://github.com/jackeymm/morning</url>
-
-
   <modules>
-    <module>morning-spring</module>
-    <module>morning-test</module>
+    <module>morning-spring-cache</module>
+    <module>morning-spring-test</module>
+    <module>morning-spring-cache/morning-spring-cache-redis</module>
   </modules>
 
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <testcontainers.version>1.16.0</testcontainers.version>
-    <junit.version>4.13.2</junit.version>
   </properties>
 
 </project>
